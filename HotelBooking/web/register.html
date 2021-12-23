@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register page</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #registerForm label.error {
+                margin-left: 20px;
+                color: red;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#registerForm").validate({
+                    rules: {
+                        txtUserId: {
+                            required: true,
+                            email: true,
+                        },
+                        txtName: {
+                            required: true,
+                            rangelength: [3, 500]
+                        },
+                        txtPhone: {
+                            required: true,
+                            phoneUK: true
+                        },
+                        taAddress: {
+                            required: true,
+                            rangelength: [10, 500]
+                        },
+                        txtPassword: {
+                            required: true,
+                            rangelength: [3, 500]
+                        },
+                        txtConfirmPassword: {
+                            required: true,
+                            equalTo: "#txtPassword"
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <a href="login.html">Login</a> 
+
+        <a href="MainController?action=Search Hotel" style="margin-left: 40%">Main page</a>
+        <br>
+        <form id="registerForm" action="MainController" method="post">
+            ID:<input type="text" name="txtUserId"><br>
+
+            Name:<input type="text" name="txtName"><br>
+            Phone:<input type="text" name="txtPhone"><br>
+
+            Address:<textarea name="taAddress"></textarea><br>
+            Password: <input type="password" name="txtPassword" id="txtPassword" /><br>
+            Confirm password: <input type="password" name="txtConfirmPassword"/><br>
+            <input type="submit" name="action" value="Register">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+INFO    2021-10-29 14:28:47,755 [http-nio-8084-exec-13] tannhn.controllers.LoginController  - User KhanhKT@fpt.edu.vn has logged in at Fri Oct 29 14:28:47 ICT 2021
+INFO    2021-10-29 14:33:25,788 [http-nio-8084-exec-21] tannhn.controllers.ConfirmBookingController  - booking id: 158 has been confirmed
+INFO    2021-10-29 14:34:57,548 [http-nio-8084-exec-21] tannhn.controllers.LoginController  - User nhattan9101999@gmail.com has logged in at Fri Oct 29 14:34:57 ICT 2021
+INFO    2021-10-29 14:35:59,082 [http-nio-8084-exec-18] tannhn.controllers.ConfirmBookingController  - booking id: 160 has been confirmed
+INFO    2021-10-29 14:39:21,152 [http-nio-8084-exec-3] tannhn.controllers.LoginController  - User nhattan9101999@gmail.com has logged in at Fri Oct 29 14:39:21 ICT 2021
+INFO    2021-10-29 14:40:18,801 [http-nio-8084-exec-12] tannhn.controllers.LoginController  - User KhanhKT@fpt.edu.vn has logged in at Fri Oct 29 14:40:18 ICT 2021
+INFO    2021-10-29 14:40:57,440 [http-nio-8084-exec-14] tannhn.controllers.ConfirmBookingController  - booking id: 162 has been confirmed
+INFO    2021-10-29 14:46:29,907 [http-nio-8084-exec-27] tannhn.controllers.ConfirmBookingController  - booking id: 163 has been confirmed
+ERROR   2021-10-29 14:46:56,625 [http-nio-8084-exec-30] tannhn.controllers.CheckOutController  - java.lang.NullPointerException
